@@ -1,0 +1,60 @@
+.conquistas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fffde7, #fff8e1);
+  font-family: "Segoe UI", sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.conquistas-container h2 {
+  font-size: 26px;
+  color: #f57f17;
+  margin-bottom: 15px;
+}
+
+.conquistas-container p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.badge {
+  background-color: #fbc02d;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(251, 192, 45, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.badge:hover {
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .conquistas-container h2 {
+    font-size: 22px;
+  }
+
+  .conquistas-container p {
+    font-size: 16px;
+  }
+
+  .badge {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
