@@ -13,13 +13,13 @@
 }
 
 .saudacao-conteudo {
-  display: flex;         /* ATIVA O FLEXBOX */
-  align-items: center; /* Alinha verticalmente */
-  gap: 20px;           /* Cria um espaço entre a ilustração e o texto */
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .saudacao-ilustracao {
-  font-size: 100px; /* Tamanho GRANDE para o ícone */
+  font-size: 100px;
   color: var(--cor-texto);
 }
 
@@ -32,15 +32,15 @@
 }
 
 .saudacao-icones-humor {
-  display: flex; /* Alinha os ícones horizontalmente */
-  gap: 15px;     /* Espaço entre os ícones */
+  display: flex;
+  gap: 15px;
 }
 
 .saudacao-botao-humor {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 30px; /* Tamanho dos ícones de humor */
+  font-size: 30px;
   color: var(--cor-texto);
 }
 
