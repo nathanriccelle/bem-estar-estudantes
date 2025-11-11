@@ -8,9 +8,12 @@
   padding: 20px;
 }
 
+.conteudo {
+  padding: 40px;
+}
+
 .home-box {
   background: #fff;
-  padding: 40px;
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
