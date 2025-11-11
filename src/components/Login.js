@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 import "./Login.css";
+import Header from "./header";
 
 export default function Login() {
   const { setUsername } = useContext(UserContext);
@@ -20,7 +21,9 @@ export default function Login() {
   return (
     <main className="login-container">
       <section className="login-box">
-        <h1 className="app-title">Bem-Estar-Estudantes</h1>
+        <Header/>
+        <div className="conteudo">
+        <h1 className="app-title">Bem estar Estudante</h1>
         <form onSubmit={handleLogin}>
           <input
             type="text"
@@ -46,6 +49,7 @@ export default function Login() {
           <button type="submit">Entrar</button>
         </form>
         <p className="footer-text">Cuide do seu corpo e mente 💚</p>
+        </div>
       </section>
     </main>
   );
