@@ -1,60 +1,134 @@
-.conquistas-container {
+.conquistas-fundo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: linear-gradient(135deg, #fffde7, #fff8e1);
-  font-family: "Segoe UI", sans-serif;
-  padding: 40px 20px;
-  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.conquistas-container h2 {
-  font-size: 26px;
-  color: #f57f17;
-  margin-bottom: 15px;
+.conquistas-celular-box {
+  background: var(--cor-primaria);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 360px;
+  width: 100%;
+  overflow: hidden; 
 }
 
-.conquistas-container p {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 25px;
-}
 
-.badges {
+.conquistas-conteudo {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  padding: 30px; 
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.conquistas-titulo {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--cor-texto);
+  text-align: left; 
+  margin: 0;
+}
+
+.conquistas-status-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.conquistas-status-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--cor-texto);
+  font-weight: 500;
+}
+
+.conquistas-status-icone {
+  color: #ff9800;
+  font-size: 16px;
+}
+
+.conquistas-xp-bar-container {
+  width: 100%;
+  height: 8px;
+  background-color: var(--cor-secundaria);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.conquistas-xp-bar-progresso {
+  height: 100%;
+  background-color: var(--cor-texto);
+  border-radius: 4px;
+  transition: width 0.5s ease-in-out;
+}
+
+
+.conquistas-grelha-container {
+  display: flex;
+  flex-direction: column;
   gap: 15px;
 }
 
-.badge {
-  background-color: #fbc02d;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 20px;
+.conquistas-subtitulo {
+  font-size: 18px;
   font-weight: 600;
-  box-shadow: 0 3px 8px rgba(251, 192, 45, 0.4);
-  transition: transform 0.2s ease;
+  color: var(--cor-texto);
+  text-align: left;
+  margin: 0;
 }
 
-.badge:hover {
-  transform: scale(1.05);
+.conquistas-grelha {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 20px;
 }
 
-/* Responsivo */
-@media (max-width: 600px) {
-  .conquistas-container h2 {
-    font-size: 22px;
-  }
+.conquistas-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
 
-  .conquistas-container p {
-    font-size: 16px;
-  }
+.conquistas-badge-icone {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  transition: all 0.2s ease;
+}
 
-  .badge {
-    font-size: 14px;
-    padding: 10px 14px;
-  }
+.conquistas-badge span {
+  font-size: 12px;
+  color: var(--cor-texto);
+  font-weight: 500;
+}
+
+
+.conquistas-badge.desbloqueado:hover .conquistas-badge-icone {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.conquistas-badge.bloqueado .conquistas-badge-icone {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  opacity: 0.5;
 }

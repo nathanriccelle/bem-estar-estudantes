@@ -14,7 +14,8 @@
   cursor: pointer;
   font-size: 22px;
   color: var(--cor-texto);
+  transition: transform 0.2s ease-in-out;
 }
 .cabecalho-botao-icone:hover {
-  opacity: 0.5;
+  transform: scale(1.1);
 }

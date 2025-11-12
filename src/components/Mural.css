@@ -1,82 +1,137 @@
-.mural-container {
+.mural-fundo {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
   min-height: 100vh;
   background: linear-gradient(135deg, #f3e7e9, #e3eeff);
-  font-family: "Segoe UI", sans-serif;
-  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.mural-container h2 {
-  font-size: 26px;
-  color: #4a148c;
-  margin-bottom: 20px;
+.mural-celular-box {
+  background: var(--cor-primaria);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 360px;
+  width: 100%;
+  overflow: hidden; 
+}
+
+.mural-conteudo {
+  display: flex;
+  flex-direction: column;
+  padding: 30px; 
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+
+.mural-titulo {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--cor-texto);
+  text-align: left;
+  margin: 0;
+}
+
+.mural-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.mural-input-icone {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: var(--cor-texto);
+  font-size: 18px;
 }
 
 textarea {
   width: 100%;
-  max-width: 400px;
-  min-height: 100px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  padding: 12px;
-  font-size: 15px;
-  resize: none;
-  outline: none;
-  transition: border 0.3s ease;
-}
-
-textarea:focus {
-  border-color: #7b1fa2;
-}
-
-button {
-  background-color: #7b1fa2;
-  color: white;
-  padding: 10px 20px;
-  margin-top: 10px;
+  min-height: 120px;
+  background-color: var(--cor-secundaria);
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
+  padding: 15px 15px 15px 45px;
+  font-size: 15px;
+  resize: vertical;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--cor-texto);
+}
+
+textarea::placeholder {
+  color: var(--cor-texto);
+  opacity: 0.8;
+}
+
+
+.btn-publicar {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  padding: 12px 20px;
+  margin-top: 0;
+  border: none;
+  border-radius: 20px;
   cursor: pointer;
   font-weight: 600;
-  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
 }
 
-button:hover {
-  background-color: #4a148c;
-  transform: scale(1.05);
+.btn-publicar:hover {
+  opacity: 0.8;
 }
 
-.posts {
-  margin-top: 30px;
+.mural-lista {
+  margin-top: 10px;
   width: 100%;
-  max-width: 450px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
+  padding-bottom: 20px;
 }
 
-.post {
-  background-color: white;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.mural-post {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
   text-align: left;
+  border-bottom: 1px solid var(--cor-secundaria);
+  padding-bottom: 20px;
 }
 
-.post strong {
-  color: #4a148c;
+.mural-post:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
-/* Responsivo */
-@media (max-width: 600px) {
-  textarea {
-    max-width: 90%;
-  }
+.mural-post-icone {
+  font-size: 32px;
+  color: var(--cor-texto);
+  margin-top: -2px;
+}
 
-  .posts {
-    max-width: 90%;
-  }
+.mural-post-texto {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.mural-post-texto strong {
+  font-weight: 600;
+  color: var(--cor-texto);
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.mural-post-texto p {
+  margin: 0;
+  color: var(--cor-texto);
+  font-size: 14px;
+  line-height: 1.5;
 }

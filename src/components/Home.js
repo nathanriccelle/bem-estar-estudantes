@@ -5,6 +5,7 @@ import { MdSelfImprovement } from 'react-icons/md';
 import { FaRegSmile, FaRegMeh, FaRegFrown } from 'react-icons/fa';
 import "./Home.css";
 import Header from "./header";
+import Recomendados from "./Recomendados";
 
 export default function Home() {
   const { username } = useContext(UserContext);
@@ -33,11 +34,7 @@ export default function Home() {
 
       </div>
 
-        <nav className="menu">
-          <Link to="/respiracao" className="menu-item">🧘 Respiração</Link>
-          <Link to="/mural" className="menu-item">💬 Mural</Link>
-          <Link to="/conquistas" className="menu-item">🏅 Conquistas</Link>
-        </nav>
+      <Recomendados/>
         </div>
       </section>
     </main>
