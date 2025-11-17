@@ -1,7 +1,7 @@
 # PROJETO INTEGRADOR: UNI HEALTH
 ## - Desenvolvimento de Sistemas Web Modularizável
 
-O **Uni Health** é um projeto desenvolvido como parte do Curso de Tecnologia em Análise e Desenvolvimento de Sistemas do SENAC, focado em oferecer suporte ao bem-estar emocional de estudantes universitários.
+O **Uni Health** é um projeto desenvolvido como parte do Curso de Tecnologia em Sistemas para Internet do SENAC, focado em oferecer suporte ao bem-estar emocional de estudantes universitários.
 
 ### Membros do Grupo
 
