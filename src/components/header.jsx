@@ -3,7 +3,7 @@ import "./header.css";
 
 import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import NotificationsIcon from "@mui/icons-material/Notifications";
+
 import { Link as RouterLink, useLocation } from "react-router-dom";
 
 import Box from "@mui/material/Box";
@@ -22,6 +22,7 @@ import { GiMeditation } from "react-icons/gi";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 
 import { IoCloseSharp } from "react-icons/io5";
+import Modal from "./Modal";
 
 function Header() {
   const [open, setOpen] = React.useState(false);
@@ -80,13 +81,13 @@ function Header() {
         </IconButton>
       </div>
 
-      <IconButton size="large">
-        <NotificationsIcon fontSize="large" />
-      </IconButton>
+
 
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>
+
+      <Modal />
     </header>
   );
 }
