@@ -18,8 +18,8 @@ export default function Mural() {
  };
 
  return (
-  <div className="mural-fundo">
-   <div className="mural-celular-box">
+  <div className="container mural-fundo">
+   <div className="box mural-celular-box">
         
      <Header/>
 

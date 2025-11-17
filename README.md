@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# 🎓 PROJETO INTEGRADOR: UNI HEALTH - Desenvolvimento de Sistemas Web Modularizável
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O **Uni Health** é um projeto desenvolvido como parte do Curso de Tecnologia em Análise e Desenvolvimento de Sistemas do SENAC, focado em oferecer suporte ao bem-estar emocional de estudantes universitários.
 
-## Available Scripts
+### 👥 Membros do Grupo
 
-In the project directory, you can run:
+| Nome                             |
+| :------------------------------- |
+| Lucas Vieira da Silva            |
+| Nathan Riccelle Coimbra Oliveira |
+| Vandilson Fabio de Lima          |
+| Vivian Farias da Silva           |
+| Weber Gonçalves da Silva         |
 
-### `npm start`
+**Orientador:** Prof. Enoque Leal
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎯 Visão Geral do Produto
 
-### `npm test`
+O **Uni Health** é um aplicativo web modularizável, projetado como um suporte prático e acessível para os desafios emocionais da vida acadêmica (ansiedade, estresse, sobrecarga, isolamento). [cite_start]O projeto visa contribuir para a prevenção de crises psicológicas e redução do abandono de cursos[cite: 30].
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Principais Funcionalidades
 
-### `npm run build`
+As funcionalidades foram pensadas para atender a perfis variados (Personas) e incluem:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [cite_start]**Check-in Emocional Diário:** Registro rápido de humor para monitoramento e feedback[cite: 52].
+- [cite_start]**Exercícios Guiados:** Áudios e vídeos de respiração, meditação e relaxamento[cite: 54].
+- [cite_start]**Chat de Apoio Anônimo:** Comunidade segura para desabafo e troca de experiências ou acesso a psicólogos parceiros[cite: 55].
+- [cite_start]**Gamificação:** Recompensas e conquistas para incentivar a manutenção de práticas de bem-estar[cite: 56].
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💻 Arquitetura e Tecnologias
 
-### `npm run eject`
+O projeto é dividido em **Frontend** (Interface do Usuário) e **Backend** (Servidor/API) para garantir a modularização.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Single Page Application (SPA) desenvolvida com **React.js**.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Tecnologias Principais:** React.js, `react-router-dom`, Context API (`UserProvider`) para gerenciamento de estado e autenticação.
+- **Rotas Definidas (src/App.js):** `/`, `/home`, `/mural`, `/respiracao`, `/conquistas`, `/recomendados`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Backend
 
-## Learn More
+API RESTful construída com Node.js e o framework Express.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Tecnologias Principais:** Node.js, Express.js, Mongoose (MongoDB), JWT (JSON Web Tokens).
+- **Status de Desenvolvimento:** A arquitetura base e a autenticação estão implementadas, demonstrando o conhecimento sobre segurança da aplicação.
+  - **Funcionalidades Concluídas:** Conexão com o **MongoDB**, rota `/login` e o _middleware_ de segurança `verificaToken` para proteção de rotas futuras.
+  - **Porta:** Configurado para rodar na porta `3001`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🚀 Como Rodar o Projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Para configurar e executar o projeto, siga os passos para o Backend e, em seguida, para o Frontend.
 
-### Analyzing the Bundle Size
+### 1. Configuração do Backend (API)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1.  **Pré-requisitos:** Node.js e MongoDB (local ou remoto).
+2.  **Variáveis de Ambiente:** Crie um arquivo `.env` na raiz do diretório **Backend** com as seguintes variáveis:
+    ```
+    MONGO_URL=<Sua string de conexão com o MongoDB>
+    SECRET=<Uma chave secreta para o JWT>
+    ```
+3.  **Instalação de Dependências:** No diretório **Backend**, execute:
+    ```bash
+    npm install
+    ```
+4.  **Inicialização do Servidor:**
+    ```bash
+    npm start # ou o comando configurado para inicializar o servidor Express
+    ```
+    O servidor será iniciado na porta 3001 e fará a conexão com o banco de dados.
 
-### Making a Progressive Web App
+### 2. Configuração do Frontend (App)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1.  **Instalação de Dependências:** No diretório **Frontend**, execute:
+    ```bash
+    npm install
+    ```
+2.  **Execução do Aplicativo:**
+    ```bash
+    npm start
+    ```
+    O aplicativo será iniciado em modo de desenvolvimento.
+    _Acesse:_ **`http://localhost:3000`** para visualizar a tela de Login.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---

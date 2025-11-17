@@ -1,8 +1,9 @@
 import React, { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 import "./Login.css";
 import Header from "./header";
+import { Button, TextField } from "@mui/material";
 
 export default function Login() {
   const { setUsername } = useContext(UserContext);
@@ -10,6 +11,8 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const navigate = useNavigate();
+
+  const location = useLocation().pathname;
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -19,13 +22,15 @@ export default function Login() {
   };
 
   return (
-    <main className="login-container">
-      <section className="login-box">
-        <Header/>
+    <main className="container login-container">
+      <section className="box login-box">
+        {(location !== "/") && (
+          <Header/>
+        )}
         <div className="conteudo">
         <h1 className="app-title">Bem estar Estudante</h1>
         <form onSubmit={handleLogin}>
-          <input
+          {/* <input
             type="text"
             placeholder="Name"
             value={nome}
@@ -46,7 +51,27 @@ export default function Login() {
             onChange={(e) => setSenha(e.target.value)}
             required
           />
-          <button type="submit">Entrar</button>
+          <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+
+           */}
+
+          <TextField 
+            label="Nome" variant="outlined" autoComplete="off" 
+            value={nome}
+            onChange={(e) => setNome(e.target.value)}
+            />
+          <TextField 
+            label="Email" variant="outlined" autoComplete="off" 
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            />
+          <TextField 
+            label="Senha" variant="outlined" autoComplete="off" 
+            placeholder="Senha"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
+            />
+          <Button variant="contained" type="submit" size="large">ENTRAR</Button>
         </form>
         <p className="footer-text">Cuide do seu corpo e mente 💚</p>
         </div>
