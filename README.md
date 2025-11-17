@@ -19,16 +19,16 @@ O **Uni Health** é um projeto desenvolvido como parte do Curso de Tecnologia em
 
 ## Visão Geral do Produto
 
-O **Uni Health** é um aplicativo web modularizável, projetado como um suporte prático e acessível para os desafios emocionais da vida acadêmica (ansiedade, estresse, sobrecarga, isolamento). O projeto visa contribuir para a prevenção de crises psicológicas e redução do abandono de cursos[cite: 30].
+O **Uni Health** é um aplicativo web modularizável, projetado como um suporte prático e acessível para os desafios emocionais da vida acadêmica (ansiedade, estresse, sobrecarga, isolamento). O projeto visa contribuir para a prevenção de crises psicológicas e redução do abandono de cursos.
 
 ### Principais Funcionalidades
 
 As funcionalidades foram pensadas para atender a perfis variados (Personas) e incluem:
 
-- **Check-in Emocional Diário:** Registro rápido de humor para monitoramento e feedback[cite: 52].
-- **Exercícios Guiados:** Áudios e vídeos de respiração, meditação e relaxamento[cite: 54].
-- **Chat de Apoio Anônimo:** Comunidade segura para desabafo e troca de experiências ou acesso a psicólogos parceiros[cite: 55].
-- **Gamificação:** Recompensas e conquistas para incentivar a manutenção de práticas de bem-estar[cite: 56].
+- **Check-in Emocional Diário:** Registro rápido de humor para monitoramento e feedback.
+- **Exercícios Guiados:** Áudios e vídeos de respiração, meditação e relaxamento.
+- **Chat de Apoio Anônimo:** Comunidade segura para desabafo e troca de experiências ou acesso a psicólogos parceiros.
+- **Gamificação:** Recompensas e conquistas para incentivar a manutenção de práticas de bem-estar.
 
 ---
 
