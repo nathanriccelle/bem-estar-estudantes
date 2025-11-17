@@ -1,8 +1,8 @@
-# 🎓 PROJETO INTEGRADOR: UNI HEALTH - Desenvolvimento de Sistemas Web Modularizável
+# PROJETO INTEGRADOR: UNI HEALTH - Desenvolvimento de Sistemas Web Modularizável
 
 O **Uni Health** é um projeto desenvolvido como parte do Curso de Tecnologia em Análise e Desenvolvimento de Sistemas do SENAC, focado em oferecer suporte ao bem-estar emocional de estudantes universitários.
 
-### 👥 Membros do Grupo
+### Membros do Grupo
 
 | Nome                             |
 | :------------------------------- |
@@ -16,7 +16,7 @@ O **Uni Health** é um projeto desenvolvido como parte do Curso de Tecnologia em
 
 ---
 
-## 🎯 Visão Geral do Produto
+## Visão Geral do Produto
 
 O **Uni Health** é um aplicativo web modularizável, projetado como um suporte prático e acessível para os desafios emocionais da vida acadêmica (ansiedade, estresse, sobrecarga, isolamento). [cite_start]O projeto visa contribuir para a prevenção de crises psicológicas e redução do abandono de cursos[cite: 30].
 
@@ -31,7 +31,7 @@ As funcionalidades foram pensadas para atender a perfis variados (Personas) e in
 
 ---
 
-## 💻 Arquitetura e Tecnologias
+## Arquitetura e Tecnologias
 
 O projeto é dividido em **Frontend** (Interface do Usuário) e **Backend** (Servidor/API) para garantir a modularização.
 
@@ -53,7 +53,7 @@ API RESTful construída com Node.js e o framework Express.
 
 ---
 
-## 🚀 Como Rodar o Projeto
+## Como Rodar o Projeto
 
 Para configurar e executar o projeto, siga os passos para o Backend e, em seguida, para o Frontend.
 
