@@ -70,6 +70,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 #Apresentação do projeto "Bem estar Estudante"
-<p align="center"> 
 [Assista ao vídeo](https://www.youtube.com/watch?v=MlVeRHeNTno)
 
+<h1 align="center">Apresentação do projeto "Bem estar Estudante"</h1>
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=MlVeRHeNTno" target="_blank">
+    Assista ao vídeo
+  </a>
+</p>
