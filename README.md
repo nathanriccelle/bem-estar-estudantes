@@ -78,3 +78,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     Assista ao vídeo
   </a>
 </p>
+
+<<<<<<< HEAD
+[Assista ao vídeo](https://www.youtube.com/watch?v=MlVeRHeNTno)
+=======
+[Veja o vídeo aqui](https://youtu.be/MlVeRHeNTno)
+>>>>>>> minha-contribuicao
