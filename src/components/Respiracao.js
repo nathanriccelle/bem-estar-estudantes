@@ -32,9 +32,9 @@ export default function Respiracao() {
   
    return (
 
-    <div className="respiracao-fundo">
+    <div className="container respiracao-fundo">
       
-      <div className="respiracao-celular-box">
+      <div className="box respiracao-celular-box">
         
         <Cabecalho /> 
         

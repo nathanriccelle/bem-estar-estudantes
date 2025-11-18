@@ -36,9 +36,9 @@ export default function Conquistas() {
 
  return (
 
-   <div className="conquistas-fundo">
+   <div className="container conquistas-container">
 
-     <div className="conquistas-celular-box">
+     <div className="box conquistas-celular-box">
         <Header /> 
 
 
