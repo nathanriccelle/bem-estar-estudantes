@@ -89,4 +89,24 @@ Para configurar e executar o projeto, siga os passos para o Backend e, em seguid
     O aplicativo será iniciado em modo de desenvolvimento.
     _Acesse:_ **`http://localhost:3000`** para visualizar a tela de Login.
 
----
+
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+<h1 align="center">Apresentação do projeto "Bem estar Estudante"</h1>
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=MlVeRHeNTno" target="_blank">
+    Assista ao vídeo
+  </a>
+</p>
